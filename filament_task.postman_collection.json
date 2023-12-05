@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "f15bc1c1-b54e-4ad8-b240-a55e0bffeab6",
+		"name": "filament_task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27580055"
+	},
+	"item": [
+		{
+			"name": "make user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"john\",\r\n    \"email\" : \"john12@mail.ru\",\r\n    \"password\" : \"12345678\",\r\n    \"ballance\" : \"500\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1/api/user",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "credit ballance",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1/api/user/ballance/credit/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"api",
+						"user",
+						"ballance",
+						"credit",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "debit ballance",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1/api/user/ballance/debit/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"api",
+						"user",
+						"ballance",
+						"debit",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
